@@ -5,7 +5,7 @@ Este proyecto es una aplicación web para gestionar la distribución de producto
 ## Links de forms
 - **Buscar Productos**: buscarProductos/
 - **Crear Productos**: productoForm/
-- **Crear Pedidos**: pedidoForm/ este form tiene entregable (un valor booleano) en el cual no se necesita ingresar nada. espero arreglar esto en el taller avanzado, por ahora ignorar ese valor.
+- **Crear Pedidos**: pedidoForm/ este form tiene entregable (un valor booleano) en el cual se necesita clickear en la checkbox para mandar el form, igualmente se manda en false ya que no te deberia pedir eso pero debido a falta de informacion hasta la clase 21 no sabria como quitarlo, espero solucionarlo en el taller avanzado.
 - **Crear Cliente**:clienteForm/
 
 ## Tablas
