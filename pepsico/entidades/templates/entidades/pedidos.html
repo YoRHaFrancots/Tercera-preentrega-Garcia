@@ -1,0 +1,44 @@
+{%extends "entidades/index.html"%}
+
+{% block titulo %}
+<div class="container px-4 px-lg-5 h-100">
+    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">Pedidos</h1>
+            <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+            
+            <a class="btn btn-primary btn-xl" href="{%url 'pedidoForm'%}">Hace tu pedido</a>
+            <p class="text-white-75 mt-5">Mira abajo nuestros pedidos</p>
+           
+            
+        </div>
+    </div>
+</div>
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Descripcion</th>
+            <th>Direccion</th>
+            <th>fecha de entrega</th>
+            <th>entrega</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for p in pedidos %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.descripcion }}</td>
+            <td>{{ p.direccion }}</td>
+            <td>{{ p.fechaEntrega }}</td>
+            <td>{{ p.entregado}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
